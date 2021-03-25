@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "Lorem",
+    "image": "/images/cat1.jpg",
+    "description": "Etiam fermentum orci ut lacus sollicitudin, vitae lobortis sem auctor.",
+    "count": "54",
+    "price": "2323"
+  },
+  {
+    "id": 2,
+    "name": "İpsum",
+    "image": "/images/kus1.jpg",
+    "description": "Etiam fermentum orci ut lacus sollicitudin, vitae lobortis sem auctor.",
+    "count": 20,
+    "price": 80
+  },
+  {
+    "id": 3,
+    "name": "Test Test",
+    "image": "/images/kus1.jpg",
+    "description": "Etiam fermentum orci ut lacus sollicitudin, vitae lobortis sem auctor.",
+    "count": "10",
+    "price": "1200"
+  },
+  {
+    "id": 4,
+    "name": "Çekirge",
+    "image": "/images/kus1.jpg",
+    "description": "Etiam fermentum orci ut lacus sollicitudin, vitae lobortis sem auctor.",
+    "count": 20,
+    "price": 80
+  },
+  {
+    "id": 5,
+    "name": "Çekirge",
+    "image": "/images/kus1.jpg",
+    "description": "Etiam fermentum orci ut lacus sollicitudin, vitae lobortis sem auctor.",
+    "count": 20,
+    "price": 80
+  },
+  {
+    "id": 6,
+    "name": "Çekirge",
+    "image": "/images/kus1.jpg",
+    "description": "Etiam fermentum orci ut lacus sollicitudin, vitae lobortis sem auctor.",
+    "count": 20,
+    "price": 80
+  },
+  {
+    "id": 7,
+    "name": "Çekirge",
+    "image": "/images/kus1.jpg",
+    "description": "Etiam fermentum orci ut lacus sollicitudin, vitae lobortis sem auctor.",
+    "count": 20,
+    "price": 80
+  },
+  {
+    "id": 8,
+    "name": "Çekirge",
+    "image": "/images/kus1.jpg",
+    "description": "Etiam fermentum orci ut lacus sollicitudin, vitae lobortis sem auctor.",
+    "count": 20,
+    "price": 80
+  },
+  {
+    "id": 10,
+    "name": "Kedi11",
+    "image": "/images/cat1.jpg",
+    "description": "Etiam fermentum orci ut lacus sollicitudin, vitae lobortis sem auctor.",
+    "count": "54",
+    "price": "2323"
+  },
+  {
+    "id": 20,
+    "name": "Kuş deneme",
+    "image": "/images/kus1.jpg",
+    "description": "Etiam fermentum orci ut lacus sollicitudin, vitae lobortis sem auctor.",
+    "count": 20,
+    "price": 80
+  },
+  {
+    "id": 30,
+    "name": "Test Test",
+    "image": "/images/kus1.jpg",
+    "description": "Etiam fermentum orci ut lacus sollicitudin, vitae lobortis sem auctor.",
+    "count": "10",
+    "price": "1200"
+  },
+  {
+    "id": 40,
+    "name": "Çekirge",
+    "image": "/images/kus1.jpg",
+    "description": "Etiam fermentum orci ut lacus sollicitudin, vitae lobortis sem auctor.",
+    "count": 20,
+    "price": 80
+  },
+  {
+    "id": 50,
+    "name": "Çekirge",
+    "image": "/images/kus1.jpg",
+    "description": "Etiam fermentum orci ut lacus sollicitudin, vitae lobortis sem auctor.",
+    "count": 20,
+    "price": 80
+  },
+  {
+    "id": 60,
+    "name": "Çekirge",
+    "image": "/images/kus1.jpg",
+    "description": "Etiam fermentum orci ut lacus sollicitudin, vitae lobortis sem auctor.",
+    "count": 20,
+    "price": 80
+  },
+  {
+    "id": 70,
+    "name": "Çekirge",
+    "image": "/images/kus1.jpg",
+    "description": "Etiam fermentum orci ut lacus sollicitudin, vitae lobortis sem auctor.",
+    "count": 20,
+    "price": 80
+  },
+  {
+    "id": 80,
+    "name": "Çekirge",
+    "image": "/images/kus1.jpg",
+    "description": "Etiam fermentum orci ut lacus sollicitudin, vitae lobortis sem auctor.",
+    "count": 20,
+    "price": 80
+  }
+]

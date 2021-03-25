@@ -1,0 +1,18 @@
+.container {
+  background-color: antiquewhite;
+  min-height: 100vh;
+}
+.subContainer {
+  display: flex;
+  margin-top: var(--size-20);
+
+  flex-direction: column;
+  /* justify-content: center; */
+}
+.thirdContainer {
+  padding: 1rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: var(--size-40);
+}

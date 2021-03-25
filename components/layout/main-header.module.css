@@ -1,0 +1,128 @@
+.header,
+.bgHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  height: var(--size-20);
+
+  position: fixed;
+  width: 100%;
+  padding-left: var(--size-16);
+  padding-right: var(--size-16);
+  z-index: 10;
+  -webkit-transition: all ease-out 0.5s;
+  -moz-transition: all ease-out 0.5s;
+  -o-transition: all ease-out 0.5s;
+  transition: all ease-out 0.5s;
+}
+.bgHeader {
+  background-color: var(--color-dark-gray);
+}
+
+.logo {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.drawerIcon {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: var(--size-4);
+  top: var(--size-6);
+}
+
+.logo a {
+  color: var(--color-primary-light);
+  font-size: var(--size-8);
+  text-decoration: none;
+  font-family: "Fira", sans-serif;
+}
+.logo a:hover {
+  color: var(--color-primary-dark);
+}
+
+.navigation ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  align-items: center;
+}
+.liNormal {
+  margin: 0;
+  list-style-type: none;
+  font-size: var(--size-6);
+  color: var(--color-primary-light);
+  margin-left: var(--size-6);
+  cursor: pointer;
+}
+.liRound {
+  margin: 0;
+  list-style-type: none;
+  font-size: var(--size-6);
+  color: var(--color-secondary-light);
+  background-color: var(--color-secondary-dark);
+  border-radius: 10px;
+  padding: 5px;
+  margin-left: var(--size-6);
+  cursor: pointer;
+  /* margin-top: -5px; */
+}
+.liNormal:hover {
+  color: var(--color-primary-dark);
+}
+
+.liRound:hover {
+  background-color: var(--color-secondary-light);
+  color: var(--color-secondary-dark);
+}
+@media screen and (max-width: 700px) {
+  .header,
+  .bgHeader {
+    padding-left: var(--size-6);
+    padding-right: var(--size-6);
+  }
+  .logo a {
+    font-size: var(--size-6);
+  }
+
+  .navigation li {
+    margin: 0;
+    font-size: var(--size-4);
+    margin-left: var(--size-5);
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .drawerIcon {
+    display: block;
+  }
+  .header,
+  .bgHeader {
+    padding-left: var(--size-6);
+    padding-right: var(--size-6);
+  }
+  .logo a {
+    font-size: var(--size-6);
+  }
+  .navigation {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header,
+  .bgHeader {
+    padding-left: var(--size-4);
+    padding-right: var(--size-4);
+  }
+}
+@media (orientation: landscape) and (max-width: 485px) {
+  .navigation {
+    display: none;
+  }
+  .drawerIcon {
+    display: block;
+  }
+}

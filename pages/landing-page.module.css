@@ -1,0 +1,161 @@
+.container {
+  background-color: antiquewhite;
+  min-height: 100vh;
+}
+.subContainer {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.landingText {
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  color: #fff;
+}
+.landingText h1 {
+  font-size: var(--size-16);
+}
+.smallTextContainer {
+  margin-top: var(--size-6);
+}
+.landingButton {
+  padding: 10px;
+  background-color: var(--color-primary-dark);
+  width: var(--size-40);
+  border-radius: 10px;
+  font-size: var(--size-6);
+  cursor: pointer;
+}
+.landingButton:hover {
+  background-color: var(--color-secondary-dark);
+  color: var(--color-primary-light);
+  transform: scale(1.04);
+}
+.landingButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--size-6);
+}
+
+.secondContainer {
+  padding: 1rem 2rem 2rem 2rem;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 4vh;
+  padding-bottom: var(--size-40);
+  /* z-index: 1; */
+}
+
+.infoBox {
+  width: 22%;
+  /* flex: 1; */
+  padding: var(--size-5);
+  margin-top: var(--size-2);
+  background-color: #fff;
+  margin: 0.5%;
+  border-radius: 20px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: var(--size-12);
+  padding-bottom: var(--size-12);
+}
+.infoBox h4 {
+  letter-spacing: 1px;
+  text-align: center;
+}
+.infoBox h6 {
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: small;
+}
+
+.smallIcon {
+  width: var(--size-16);
+  height: var(--size-16);
+  margin-bottom: var(--size-3);
+}
+
+.thirdContainer {
+  padding: 1rem 2rem 2rem 2rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: -5rem;
+  padding-bottom: var(--size-40);
+}
+
+.bgImageContainer {
+  height: 90vh;
+}
+
+@media screen and (max-width: 700px) {
+  .landingText h1 {
+    font-size: var(--size-8);
+  }
+  .landingText h4 {
+    font-size: var(--size-4);
+  }
+  .landingButton {
+    width: var(--size-40);
+  }
+  .landingButtonContainer {
+    margin-top: var(--size-4);
+  }
+  .secondContainer {
+    margin-top: 4vh;
+    flex-wrap: wrap;
+  }
+  .infoBox {
+    min-width: 42%;
+    margin-bottom: var(--size-6);
+    padding-top: var(--size-6);
+    padding-bottom: var(--size-6);
+  }
+  .smallTextContainer {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .secondContainer {
+    flex-direction: column;
+    align-items: center;
+    padding-left: var(--size-8);
+    padding-right: var(--size-8);
+    margin-top: 4vh;
+  }
+  .infoBox {
+    width: 100%;
+    margin-bottom: var(--size-6);
+  }
+  .landingText h1 {
+    font-size: var(--size-8);
+  }
+  .landingText h4 {
+    font-size: var(--size-3);
+  }
+  .landingButton {
+    width: var(--size-40);
+    font-size: var(--size-5);
+  }
+  .smallTextContainer {
+    margin-top: var(--size-8);
+  }
+
+  .infoBox h4 {
+    font-size: var(--size-4);
+  }
+}

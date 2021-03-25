@@ -1,0 +1,114 @@
+.container {
+  width: 25%;
+}
+
+.subContainer {
+  background-color: white;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s;
+  -webkit-box-shadow: 4px 4px 27px 1px rgba(173, 173, 173, 1);
+  -moz-box-shadow: 4px 4px 27px 1px rgba(173, 173, 173, 1);
+  box-shadow: 4px 4px 27px 1px rgba(173, 173, 173, 1);
+}
+.subContainer:hover {
+  transform: scale(1.07);
+  background-color: var(--color-primary-lighter);
+}
+
+.infoBox {
+  /* width: 22%; */
+  flex: 1;
+  /* padding: var(--size-5); */
+  /* margin-top: var(--size-2); */
+  /* background-color: #fff; */
+  /* margin: 0.5%; */
+  /* border-radius: 20px; */
+  /* z-index: 1; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding-top: var(--size-8); */
+  /* padding-bottom: var(--size-8); */
+  /* white-space: normal;
+  overflow: hidden;
+  text-overflow: unset; */
+  word-wrap: break-word;
+  text-align: center;
+  width: 100%;
+}
+.infoBox h4 {
+  letter-spacing: 1px;
+}
+.infoBox p {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  word-break: break-all;
+  max-width: 100%;
+}
+
+.smallIcon {
+  width: 99%;
+  /* margin-bottom: var(--size-3); */
+}
+
+.image {
+  border-radius: 10px;
+}
+
+.priceContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: -1.2rem;
+  z-index: 1;
+}
+
+.price {
+  background-color: var(--color-white);
+  width: 80%;
+  z-index: 1;
+  padding-top: 0.6rem;
+  padding-bottom: 1rem;
+  border-radius: 10px;
+  color: var(--color-primary-dark);
+}
+
+.readMoreButton {
+  background-color: var(--color-light-gray);
+  color: var(--color-dark-gray);
+  padding: 1rem 0rem 1rem 0rem;
+  border-radius: 2rem;
+  font-size: 100%;
+  margin-top: var(--size-3);
+  margin-bottom: var(--size-3);
+  cursor: pointer;
+  transition: 0.5s;
+  width: 90%;
+  text-align: center;
+}
+
+.readMoreButton:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--color-light-gray);
+  transform: scale(1.07);
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .container {
+    width: 100%;
+  }
+}

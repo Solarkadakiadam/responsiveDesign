@@ -1,0 +1,94 @@
+.mainContainer {
+  height: 100%;
+  width: 20%;
+  min-width: 200px;
+  z-index: 100;
+  position: fixed;
+  right: 0;
+}
+
+.leftMenu {
+  height: 100%;
+  width: 20%;
+  min-width: 200px;
+  background-color: var(--color-primary-dark);
+  z-index: 100;
+  position: fixed;
+  right: 0;
+  padding-top: var(--size-2);
+  /* display: none; */
+}
+
+.shadowBackground {
+  height: 100%;
+  width: 100vh;
+  min-width: 200px;
+  background-color: black;
+  z-index: 100;
+  opacity: 0.5;
+  position: fixed;
+  right: 0;
+}
+
+.leftMenu ul {
+  list-style: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.leftMenu li {
+  margin: 0;
+}
+
+.leftMenu h2 {
+  margin: 0;
+  color: var(--color-light-gray);
+  margin-left: 30px;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 0px 30px;
+}
+
+.button {
+  display: flex;
+  width: 100%;
+  padding: 15px 0px 15px 40px;
+  margin: 2px 0px;
+  font-size: var(--size-4);
+  color: var(--color-white);
+
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px;
+  transform: scale(0.9);
+}
+
+.button:hover {
+  background-color: var(--color-primary);
+}
+
+.button_active {
+  display: flex;
+  width: 100%;
+  background-color: var(--color-primary);
+  padding: 15px 0px 15px 40px;
+  margin: 2px 0px;
+  font-size: var(--size-5);
+  color: var(--color-white);
+  align-items: center;
+}
+
+.drawerIcon {
+  cursor: pointer;
+  position: absolute;
+  right: var(--size-4);
+  top: var(--size-6);
+}

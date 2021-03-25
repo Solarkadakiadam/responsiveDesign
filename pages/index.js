@@ -1,65 +1,160 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import classes from "./landing-page.module.css";
+import Image from "next/image";
+import { useState, useEffect } from "react";
+import { getAllProducts } from "../lib/products-util.js";
+import ExploreItemList from "../components/front/products/explore-item-list";
+import Head from "next/head";
 
-export default function Home() {
+function Main(props) {
+  const [width, setWidth] = useState();
+
+  useEffect(() => {
+    // window is accessible here.
+    setWidth(window.innerWidth);
+  }, []);
+
+  const { products } = props;
+
+  console.log(props);
+
   return (
-    <div className={styles.container}>
+    <div className={classes.container}>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Lorem Ipsum</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <div className={classes.subContainer}>
+        <div className={classes.bgImageContainer}>
+          <Image
+            src="/images/bg4.png"
+            alt="selam"
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center"
+            loading="eager"
+          />
         </div>
-      </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+        <div className={classes.landingText}>
+          <h1>Lorem ipsum dolor sit amet,</h1>
+          <h1>Consectetur adipiscing elit.</h1>
+          <div className={classes.smallTextContainer}>
+            <h4>
+              Cras facilisis auctor odio, et tincidunt nulla bibendum vel.
+            </h4>
+            <h4>eleifend et lacus vulputate.</h4>
+          </div>
+          <div className={classes.landingButtonContainer}>
+            <div className={classes.landingButton}>Lorem</div>
+          </div>
+        </div>
+      </div>
+      <div className={classes.secondContainer}>
+        <div className={classes.infoBox}>
+          <div className={classes.smallIcon}>
+            <Image
+              src="/images/ticket.png"
+              alt="selam"
+              height={40}
+              width={40}
+              layout="responsive"
+              // objectFit="cover"
+              objectPosition="center"
+            />
+          </div>
+          <div>
+            <h4 style={{ fontWeight: "lighter", marginBottom: "5px" }}>
+              Tickets
+            </h4>
+            <h6>
+              Etiam fermentum orci ut lacus sollicitudin, vitae lobortis sem
+              auctor.
+            </h6>
+          </div>
+        </div>
+        <div className={classes.infoBox}>
+          <div className={classes.smallIcon}>
+            <Image
+              src="/images/fishing.png"
+              alt="selam"
+              height={40}
+              width={40}
+              layout="responsive"
+              // objectFit="cover"
+              objectPosition="center"
+            />
+          </div>
+          <div>
+            <h4 style={{ fontWeight: "lighter", marginBottom: "5px" }}>
+              Fishing
+            </h4>
+            <h6>
+              Etiam fermentum orci ut lacus sollicitudin, vitae lobortis sem
+              auctor.
+            </h6>
+          </div>
+        </div>
+        <div className={classes.infoBox}>
+          <div className={classes.smallIcon}>
+            <Image
+              src="/images/smallForm.png"
+              alt="selam"
+              height={40}
+              width={40}
+              layout="responsive"
+              // objectFit="cover"
+              objectPosition="center"
+            />
+          </div>
+          <div>
+            <h4 style={{ fontWeight: "lighter", marginBottom: "5px" }}>
+              Paperwork
+            </h4>
+            <h6>
+              Etiam fermentum orci ut lacus sollicitudin, vitae lobortis sem
+              auctor.
+            </h6>
+          </div>
+        </div>
+        <div className={classes.infoBox}>
+          <div className={classes.smallIcon}>
+            <Image
+              src="/images/bonfire.png"
+              alt="selam"
+              height={40}
+              width={40}
+              layout="responsive"
+              // objectFit="cover"
+              objectPosition="center"
+            />
+          </div>
+          <div>
+            <h4 style={{ fontWeight: "lighter", marginBottom: "5px" }}>
+              Bonfire
+            </h4>
+            <h6>
+              Etiam fermentum orci ut lacus sollicitudin, vitae lobortis sem
+              auctor.
+            </h6>
+          </div>
+        </div>
+      </div>
+      <div className={classes.thirdContainer}>
+        <h1>Different Activities</h1>
+        <ExploreItemList products={products} />
+      </div>
     </div>
-  )
+  );
 }
+
+export async function getStaticProps() {
+  const products = await getAllProducts();
+
+  return {
+    props: {
+      products,
+    },
+  };
+}
+
+export default Main;

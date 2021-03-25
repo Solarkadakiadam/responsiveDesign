@@ -1,0 +1,21 @@
+.container {
+  background-color: antiquewhite;
+  flex: 1;
+  min-height: 100vh;
+}
+.subContainer {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  flex-direction: column;
+  /* justify-content: center; */
+  margin-top: var(--size-20);
+}
+.thirdContainer {
+  padding: 1rem 2rem 2rem 2rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: var(--size-40);
+}
